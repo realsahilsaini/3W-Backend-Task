@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Submission Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>User Submission Form</h1>
+    <form id="submission-form" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="socialHandle" placeholder="Social Media Handle" required>
+        <input type="file" name="images" accept="image/*" multiple required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <button id="admin-view">Admin - All Submissions</button>
+
+    <script src="js/submit.js"></script>
+</body>
+</html>
